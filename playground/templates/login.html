@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به سایت</title>
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+</head>
+<body>
+    <div class="container">
+    <div class="login-page">
+        <div class="form">
+            <h1>
+                ورود به سایت
+            </h1>
+          <img src="{% static '/images/logo.png' %}" style="padding-bottom:20px;">
+          <form class="login-form">
+            <input style="direction: rtl;" type="text" placeholder="ایمیل"/>
+            <input style="direction: rtl;" type="password" placeholder="رمز عبور"/>
+            <button>ورود به سایت</button>
+            <p class="message">می خواهید ثبت نام کنید ؟ <a href="#">ثبت نام</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
